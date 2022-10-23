@@ -1,0 +1,17 @@
+.news_container {
+	width: 100%;
+	max-width: 700px;
+	margin-inline: auto;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	padding-top: 10px;
+}
+
+.new_post_container {
+	display: flex;
+}
+
+.new_post_container textarea{
+	flex-grow: 2;
+}

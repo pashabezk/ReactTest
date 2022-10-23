@@ -1,0 +1,15 @@
+.news_note {
+	padding-inline: 10px;
+	border: solid dimgray 3px;
+	border-radius: 10px;
+	background-color: azure;
+}
+
+.news_note:hover {
+	border-color: aqua;
+}
+
+.news_note h3:hover {
+	color: indigo;
+	cursor: pointer;
+}
