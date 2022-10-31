@@ -1,17 +1,18 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import {Route, Routes, useLocation, useNavigate, useParams} from "react-router-dom";
+import {BrowserRouter, Route, Routes, useLocation, useNavigate, useParams} from "react-router-dom";
 import DialogsContainer from "./Components/Dialogs/DialogsContainer";
 import NewsContainer from "./Components/News/NewsContainer";
 import UsersContainer from "./Components/Users/UsersContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import HeaderContainer from "./Components/Header/HeaderContainer";
 import Login from "./Components/Login/Login";
-import {Component} from "react";
-import {connect} from "react-redux";
+import React, {Component} from "react";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./Components/Common/Preloader/Preloader";
+import store from "./redux/redux-store";
 
 class App extends Component {
 
@@ -62,7 +63,21 @@ const dispatchProps = {
 	initializeApp
 }
 
-export default compose(
+let AppContainer = compose(
 	withRouter,
 	connect(mapStateToProps, dispatchProps)
 )(App);
+
+let SamuraiJSApp = (props) => {
+	return(
+		<React.StrictMode>
+			<BrowserRouter>
+				<Provider store={store}>
+					<AppContainer/>
+				</Provider>
+			</BrowserRouter>
+		</React.StrictMode>
+	);
+}
+
+export default SamuraiJSApp;

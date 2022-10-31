@@ -1,7 +1,8 @@
 import React from 'react';
 import s from './ProfileInfo.module.css';
 import Preloader from "../../Common/Preloader/Preloader";
-import ProfileStatus from "./ProfileStatus";
+import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
+import userPhoto from "../../../assets/images/user.png";
 
 const ProfileInfo = (props) => {
 
@@ -15,9 +16,11 @@ const ProfileInfo = (props) => {
 				<img width='600px' src='https://interier-foto.ru/wp-content/uploads/dlinnye-foto-4.jpg' alt='wp'/>
 			</div>
 			<div>
-				<img className={s.ava} src={props.profile.photos.large} alt={"user ava"}/>
+				<img className={s.ava}
+					 src={props.profile.photos.large != null ? props.profile.photos.large : userPhoto}
+					 alt={"user ava"}/>
 				<p>{props.profile.aboutMe}</p>
-				<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
+				<ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
 			</div>
 		</div>
 	);

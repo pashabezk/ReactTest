@@ -2,18 +2,3 @@
 	width: 100px;
 	height: auto;
 }
-
-.selectedPage {
-	background-color: thistle;
-}
-
-.pageNumber {
-	margin-right: 5px;
-	cursor: pointer;
-	padding: 3px;
-}
-
-.pageNumber:hover {
-	border-radius: 2px;
-	border: solid burlywood 2px;
-}
