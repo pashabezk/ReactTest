@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
-import {BrowserRouter, Route, Routes, useLocation, useNavigate, useParams} from "react-router-dom";
+import {HashRouter, Route, Routes, useLocation, useNavigate, useParams} from "react-router-dom";
 import Login from "./Components/Login/Login";
 import React, {Component} from "react";
 import {connect, Provider} from "react-redux";
@@ -76,11 +76,12 @@ let AppContainer = compose(
 let SamuraiJSApp = (props) => {
 	return (
 		<React.StrictMode>
-			<BrowserRouter basename={process.env.PUBLIC}>
+			{/*<BrowserRouter/>*/}
+			<HashRouter basename={process.env.PUBLIC}>
 				<Provider store={store}>
 					<AppContainer/>
 				</Provider>
-			</BrowserRouter>
+			</HashRouter>
 		</React.StrictMode>
 	);
 }
