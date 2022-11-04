@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/ReactTest/static/css/main.b4d953d3.css",
+    "main.js": "/ReactTest/static/js/main.da1315c3.js",
+    "static/css/738.65fa98cf.chunk.css": "/ReactTest/static/css/738.65fa98cf.chunk.css",
+    "static/js/738.eebc3097.chunk.js": "/ReactTest/static/js/738.eebc3097.chunk.js",
+    "static/css/451.85ae2136.chunk.css": "/ReactTest/static/css/451.85ae2136.chunk.css",
+    "static/js/451.982b77b5.chunk.js": "/ReactTest/static/js/451.982b77b5.chunk.js",
+    "static/css/826.1a5fd499.chunk.css": "/ReactTest/static/css/826.1a5fd499.chunk.css",
+    "static/js/826.86f18f93.chunk.js": "/ReactTest/static/js/826.86f18f93.chunk.js",
+    "static/css/456.62a243e5.chunk.css": "/ReactTest/static/css/456.62a243e5.chunk.css",
+    "static/js/456.948087e0.chunk.js": "/ReactTest/static/js/456.948087e0.chunk.js",
+    "static/js/787.eaaab13d.chunk.js": "/ReactTest/static/js/787.eaaab13d.chunk.js",
+    "static/media/user.png": "/ReactTest/static/media/user.76a001d0c402b5637a97.png",
+    "static/media/preloader.svg": "/ReactTest/static/media/preloader.2ab933e4c74d839d64e356232ec55324.svg",
+    "index.html": "/ReactTest/index.html",
+    "main.b4d953d3.css.map": "/ReactTest/static/css/main.b4d953d3.css.map",
+    "main.da1315c3.js.map": "/ReactTest/static/js/main.da1315c3.js.map",
+    "738.65fa98cf.chunk.css.map": "/ReactTest/static/css/738.65fa98cf.chunk.css.map",
+    "738.eebc3097.chunk.js.map": "/ReactTest/static/js/738.eebc3097.chunk.js.map",
+    "451.85ae2136.chunk.css.map": "/ReactTest/static/css/451.85ae2136.chunk.css.map",
+    "451.982b77b5.chunk.js.map": "/ReactTest/static/js/451.982b77b5.chunk.js.map",
+    "826.1a5fd499.chunk.css.map": "/ReactTest/static/css/826.1a5fd499.chunk.css.map",
+    "826.86f18f93.chunk.js.map": "/ReactTest/static/js/826.86f18f93.chunk.js.map",
+    "456.62a243e5.chunk.css.map": "/ReactTest/static/css/456.62a243e5.chunk.css.map",
+    "456.948087e0.chunk.js.map": "/ReactTest/static/js/456.948087e0.chunk.js.map",
+    "787.eaaab13d.chunk.js.map": "/ReactTest/static/js/787.eaaab13d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4d953d3.css",
+    "static/js/main.da1315c3.js"
+  ]
+}
