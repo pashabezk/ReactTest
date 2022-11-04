@@ -1,14 +1,21 @@
+.paginator {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+}
+
 .selectedPage {
 	background-color: thistle;
 }
 
 .pageNumber {
-	margin-right: 5px;
+	margin-inline: 3px;
 	cursor: pointer;
-	padding: 3px;
+	padding: 5px;
+	border-radius: 5px;
+	border: solid #000000 2px;
 }
 
 .pageNumber:hover {
-	border-radius: 2px;
 	border: solid burlywood 2px;
 }
