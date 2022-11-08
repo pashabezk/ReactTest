@@ -18,8 +18,17 @@ const ProfileContainer = React.lazy(() => import ('./Components/Profile/ProfileC
 
 class App extends Component {
 
+	catchAllUnhandledErrors = (promiseRejectEvent) => {
+		alert(promiseRejectEvent);
+	}
+
 	componentDidMount() {
 		this.props.initializeApp();
+		window.addEventListener("unhandledrejection", this.catchAllUnhandledErrors)
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener("unhandledrejection", this.catchAllUnhandledErrors)
 	}
 
 	render() {
@@ -40,6 +49,7 @@ class App extends Component {
 							<Route path="/news" element={<NewsContainer/>}/>
 							<Route path="/users" element={<UsersContainer/>}/>
 							<Route path="/login" element={<Login/>}/>
+							<Route path="/*" element={<div>404 not found</div>}/>
 						</Routes>
 					</React.Suspense>
 				</div>
